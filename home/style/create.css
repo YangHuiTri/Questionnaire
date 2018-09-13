@@ -1,0 +1,174 @@
+body {
+	font-family: "华文宋体";
+}
+
+a {
+	flood-color: #000000;
+}
+
+a:link {
+	text-decoration: none;
+	color: #000;
+}
+
+.header-top .navbar {
+	margin-bottom: 0;
+	height: 70px;
+	padding-top: 15px;
+	background-color: white;
+}
+.header-top .navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 20px 0px 0px 30px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.header-top nav li {
+	margin-right: 20px;
+}
+
+.header-top nav li a {
+	color: black;
+}
+
+.content {
+	padding: 0 10px;
+	color: white;
+	display: block;
+}
+
+.content-left {
+	padding-top: 100px;
+	background-color: rgba(46, 140, 219, 0.95);
+	height: 500px;
+}
+
+.content-right {
+	padding-top: 100px;
+	background-color: rgba(71, 157, 230, 0.94);
+	height: 500px;
+}
+
+.content .btn {
+	color: #4597df;
+	font-size: 16px;
+}
+
+.recommend .page-header {
+	padding-left: 20px;
+	padding-bottom: 9px;
+	margin: 20px 0 20px;
+	border-bottom: 1px solid grey;
+}
+
+.recommend ol li {
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+.footer {
+	padding: 25px 0;
+}
+
+.search {
+	background: url(../img/wjbanner.jpg) no-repeat;
+	height: 146px;
+	margin-top: 70px;
+}
+
+.search ul {
+	width: 632px;
+	margin: 0 auto;
+	padding-top: 50px;
+	position: relative;
+}
+a:hover{
+	background: none;
+}
+
+/*.search .search-content{
+	padding-top: 20px;
+}*/
+
+.search ul li {
+	float: left;
+}
+
+.search .search-form {
+	width: 440px;
+	margin-right: 30px;
+	position: relative;
+}
+
+.search .survey-search {
+	width: 406px;
+	background: none;
+	border: 2px solid #f7941d;
+	border-radius: 30px;
+	line-height: 46px;
+	height: 46px;
+	color: #ebebeb;
+	padding: 2px 0 2px 20px;
+	font-size: 14px;
+}
+
+.search .surveysbtn {
+	padding: 0 21px;
+	font-size: 18px;
+	height: 46px;
+	line-height: 46px;
+	border-radius: 30px;
+	background: #ff941a;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	color: #fff;
+}
+
+.search .surver-searchicon {
+	background: url(../img/survey-ss.png) no-repeat center;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	margin: 0 10px 2px 0;
+	vertical-align: middle;
+}
+
+.search .createbtn {
+	background: #ff941a;
+	border-radius: 8px;
+	padding: 0 18px;
+	font-size: 18px;
+	height: 46px;
+	line-height: 46px;
+	color: #fff;
+}
+
+.search .createbtn img {
+	margin: 0 10px 2px 0;
+}
+
+img {
+	border: 0;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.template {
+	width: 80%;
+}
+
+.template .thumbnail{
+	padding: 10px;
+	height: 180px;
+}
+
+.create-content{
+	padding-top: 100px;
+	color: #000000;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+

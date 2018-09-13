@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+     width: 100%;
+     background: #0C2C4A;
+ }
+.container{
+    background-image: url("../image/bg_fistScreen.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.logo{
+    width: 150px;
+    height: 40px;
+    margin: 20px auto 50px 30px;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 15px;
+}
+nav ul li a{
+    color: #f1f1f1;
+}
+.logo a{
+    color: #f1f1f1;
+    font-size: 30px;
+}
+.login-box{
+    width: 500px;
+    height: 520px;
+    margin: 0 auto;
+    text-align: center;
+}
+.action{
+    color: #2D8FD9;
+}
+.login-manager{
+    margin-left: 15px;
+}
+.input{
+    width: 360px;
+    height: 60px;
+    display: block;
+    margin: 10px auto;
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 20px;
+    border: 1px solid rgba(0,0,0,.4);
+    outline: none;
+    background: rgba(255,255,255,.1);
+    border-radius: 4px;
+}
+input[type=text]{
+    border-bottom: none;
+}
+input[type=password]{
+    border-top:none;
+}
+.dock{
+    width: 220px;
+    height: 40px;
+    margin: -10px 30px 30px 0;
+    display: inline-block;
+}
+span{
+    display: inline-block;
+    vertical-align: middle;
+}
+hr{
+    width: 75%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,.2);
+}
+
+.check{
+    float: left;
+    margin-left: 60px;
+    color: #ffffff;
+    margin-top: -20px;
+}
+.forget{
+    float: right;
+    margin-right: 60px;
+    color: #ffffff;
+    margin-top: -20px;
+}
+button{
+    width: 380px;
+    height: 60px;
+    background: #2D8FD9;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 20px;
+    line-height: 60px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+button:hover{
+    background: #4D98D1;
+}
+

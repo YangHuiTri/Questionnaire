@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #c7d5e4;
+}
+h3{
+    font-size: 28px;
+    color: #484848;
+    padding: 22px 0;
+}
+h4{
+    margin: 10px 0;
+}
+h6{
+    font-weight: 500;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+body{
+    width: 1349px;
+    margin: 0 auto;
+}
+/*start header*/
+header{
+    background: #0C2C4A;
+}
+nav{
+    height: 70px;
+    margin: 0 15px;
+}
+nav .logo{
+    width: 120px;
+    height: 40px;
+    float: left;
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+nav .menu{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    margin-left: 15px;
+}
+nav li a{
+    line-height: 70px;
+}
+
+.header-main{
+    text-align: center;
+    margin-top: 130px;
+    background: url("../image/bg_fistScreen.jpg");
+}
+.header-main p{
+    color: #c7d5e4;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.button{
+    display: inline-block;
+    width: 180px;
+    height: 60px;
+    background: #2D8FD9;
+    line-height: 60px;
+    border-radius: 4px;
+    font-size: 22px;
+    margin-top: 63px;
+    margin-bottom: 66px;
+    cursor: pointer;
+}
+.button:hover{
+    color: #ffffff;
+    background: #419ADC;
+}
+.span{
+    display: block;
+    font-size: 34px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    transform: rotate(90deg);
+    padding-bottom: 20px;
+}
+
+.section-1 li span{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    color:#c7d5e4;
+    font-weight: bolder;
+}
+/*end header*/
+/*start main*/
+main{
+    text-align: center;
+}
+.section-1{
+    background: #F7F8FD;
+    padding-bottom: 50px;
+}
+h2{
+    font-size: 36px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+.classify li{
+    display: inline-block;
+    width: 22%;
+}
+.summary{
+    font-size: 14px;
+    color: #8c8c8c;
+}
+.classify-box{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.classify-1{
+    background: url("../image/classify-1.png")center center;
+    background-size: 100%;
+}
+.classify-2{
+    background: url("../image/classify-2.png")center center;
+    background-size: 100%;
+}
+.classify-3{
+    background: url("../image/classify-3.png")center center;
+    background-size: 100%;
+}
+.classify-4{
+    background: url("../image/classify-4.png")center center;
+    background-size: 100%;
+}
+.classify-5{
+    background: url("../image/classify-5.png")center center;
+    background-size: 100%;
+}
+.classify-6{
+    background: url("../image/classify-6.png")center center;
+    background-size: 100%;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.section-text{
+    text-align: left;
+    margin-top: 100px;
+    color: #484848;
+    line-height: 30px;
+}
+.section-text li{
+    list-style: disc;
+    margin-left: 20px;
+}
+.use-now{
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    color: #2D8FD9;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #2D8FD9;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.use-now:hover{
+    background: #2D8FD9;
+    color: #FFFFFF;
+}
+.clear{
+    clear: both;
+}
+/*end main*/
+/*start footer*/
+footer{
+    text-align: center;
+    background: url("../image/bg_fistScreen.jpg") center center;
+}
+footer h3{
+    padding-top: 10px;
+    color: #FFFFFF;
+}
+.text-box{
+    height: 150px;
+    padding-top: 60px;
+
+}
+.section-5{
+    padding: 30px 0;
+}
+.section-5 ul{
+    width: 800px;
+    margin: 0 auto;
+}
+.box{
+    display: inline-block;
+    width: 50%;
+    height: 200px;
+    text-align: left;
+    padding: 20px 20px;
+    color: #cccccc;
+    box-sizing: border-box;
+    border: 1px solid;
+    cursor: pointer;
+}
+.box:hover{
+    border: 1px solid rgba(255,255,255,.4);
+    transition: .35s;
+}
+.box-left{
+    float: left;
+}
+
+.box-1{
+    background: rgba(52,90,134,.15);
+    border-color: rgba(52,90,134,.15);
+}
+.box-2{
+    background: rgba(52,90,134,.25);
+    border-color: rgba(52,90,134,.25);
+}
+.box-3{
+    background: rgba(52,90,134,.35);
+    border-color: rgba(52,90,134,.35);
+}
+.box-4{
+    background: rgba(52,90,134,.45);
+    border-color: rgba(52,90,134,.45);
+}
+.box-5{
+    background: rgba(52,90,134,.55);
+    border-color: rgba(52,90,134,.55);
+}
+.box-6{
+    background: rgba(52,90,134,.65);
+    border-color: rgba(52,90,134,.65);
+}
+.box-7{
+    background: rgba(52,90,134,.75);
+    border-color: rgba(52,90,134,.75);
+}
+.box-8{
+    background: rgba(52,90,134,.85);
+    border-color: rgba(52,90,134,.85);
+}
+
+footer {
+    padding: 30px 0 10px;
+}
+footer li{
+    display: inline-block;
+}
+footer li .button{
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
+

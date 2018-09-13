@@ -1,0 +1,93 @@
+input{
+    outline: none;
+}
+input:focus{
+    outline: none;
+}
+
+body{
+    margin:0px;
+    background:url(../image/7.jpg) repeat-y;
+    background-size:100% 100%;
+}
+h2{
+    text-align: center;
+}
+#content{
+    margin: 60px auto;
+    background-color:#FFFFFF ;
+    width:880px;
+    padding:40px 20px;
+
+}
+#menu{
+    margin: 0 auto;
+    padding:0 62px;
+    font-family: "华文细黑";
+    font-size: 17px;
+}
+#first{
+    padding-left: 35px;
+    margin: 10px 10px 15px 1px;
+    cursor:pointer;
+}
+#first-radio:hover{
+    background: #dcdcdc;
+}
+#two{
+    padding-left: 35px;
+    margin: 10px 10px 15px 1px;
+}
+#three{
+    padding-left: 35px;
+    margin: 10px 10px 15px 1px;
+    cursor:pointer;
+}
+#four{
+    padding-left: 35px;
+    margin: 10px 10px 15px 1px;
+    cursor:pointer;
+}#five{
+     padding-left: 35px;
+     margin: 10px 10px 15px 1px;
+     cursor:pointer;
+ }#six{
+      padding-left: 35px;
+      margin: 10px 10px 15px 1px;
+      cursor:pointer;
+  }#seven{
+       padding-left: 35px;
+       margin: 10px 10px 15px 1px;
+       cursor:pointer;
+   }#eight{
+        padding-left: 35px;
+        margin: 10px 10px 15px 1px;
+        cursor:pointer;
+    }#nine{
+         padding-left: 35px;
+         margin: 10px 10px 15px 1px;
+                   cursor:pointer;
+     }
+#ten{
+    padding-left: 35px;
+    margin: 10px 10px 15px 1px;
+    cursor:pointer;
+}
+footer{
+    height:100px;
+    padding:30px 60px;
+}
+.item_submit
+{
+    cursor:pointer;
+    background-color: #6fc2ff;
+    width:84px;
+    height:35px;
+    font-size:15px;
+    color:white;
+    border-radius:10px;
+    display: block;
+    margin: 0 auto;
+} .item_submit:hover{
+      background: #53d1ff;
+  }

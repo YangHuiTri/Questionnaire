@@ -1,0 +1,546 @@
+/* CSS Document */
+select{
+    width:240px;
+}
+.header{
+	background:#09c;
+	}
+
+.header .logo{
+	background:#0087b4;
+	}
+
+.header .nav li{
+	border-color:#008fbf;
+	}
+
+.header .function li{
+	border-color:#008fbf;
+	}
+
+.header li a{
+	color:#fff;
+	}
+
+.header li a:hover{
+	background:#008fbf;
+	}
+
+.header li a.active{
+	color:#333;
+	background:#fff;
+	}
+
+.sidebar{
+	background:#293038;
+	}
+
+.sidebar a{
+	color:#fff;
+	}
+
+.sidebar .conver{
+	background:#394555;
+	color:#aeb9c2;
+	}
+
+.sidebar .conver .converBar:hover{
+	background:#37424f;
+	color: #fff;
+	}
+
+.sidebar .menu h1 a{
+	background:#22282e;
+	}
+
+.sidebar .menu h1 a:hover{
+	background:#37424f;
+	}
+
+.sidebar .menu h1 a.close{
+	background:#37424f;
+	border-color:#414d5c;
+	}
+
+.sidebar .menu ul li a:hover{
+	background:#37424f;
+	}
+
+.sidebar .menu ul li a.active{
+	background:#0087b4;
+	}
+
+.pagebox{
+	color:#333;
+	background:#eaedf1;overflow: auto;
+	}
+
+.pop-layer{
+	background:#fff;
+	}
+
+.pop-layer ul.list li{
+	border-color:#ddd;
+	}
+
+.pop-layer ul.list li a{
+	color:#333;
+	}
+
+.pop-layer ul.list li a:hover{
+	color:#09c;
+	}
+
+#menu-tips{
+	color:#fff;
+	}
+
+/* 内容框架样式定义开始 */
+.pagebox .title{
+	margin-top: 20px;
+	background:#f9fafc;
+	}
+
+.pagebox .title .name{
+	border-color:#09c;
+	}
+
+.pagebox .title .button a{
+	border-color:#09c;
+	color:#09c;
+	background:#fff;
+	}
+
+.pagebox .title .button a:hover{
+	background:#09c;
+	color:#fff;
+	}
+
+.pagebox .title .button a.active{
+	background:#09c;
+	color:#fff;
+	}
+
+.pagebox .title .function a{
+	color:#09c;
+	}
+
+.pagebox .area{
+	background:#fff;
+	}
+
+.pagebox .area input[type=button]{
+	color:#09c;
+	background:#fff;
+	border-color:#09c;
+	}
+
+.pagebox .area input[type=button]:hover{
+	color:#fff;
+	background:#09c;
+	}
+
+.pagebox .area input[type=button].import{
+	color:#fff;
+	background:#09c;
+	border-color:#09c;
+	}
+
+.pagebox .area input[type=button].import:hover{
+	background:#4cb7db;
+	border-color:#4cb7db;
+	}
+
+.pagebox .area table.data thead th{
+	border-color:#eee;
+	color:#09c;
+	}
+
+.pagebox .area table.data tbody td{
+	border-color:#eee;
+	}
+.pagebox .area table.data .dataTabs-ctrol-down .dataTabs-ctrol-info{border-color:#eee;}
+.pagebox .area table.data tbody td a{
+	color:#09c;
+	}
+.pagebox .area table.data tbody td .dataTabs-ctrol-down .dataTabs-ctrol-info a:hover{text-decoration: none; background: #09c; color: #fff;text-decoration: none;}
+.pagebox .area table.data tfoot td.page{
+	color:#999;
+	}
+
+.pagebox .area table.data tfoot td.page span,.pagebox .area table.data tfoot td.page a{
+	border-color:#eee;
+	}
+
+.pagebox .area table.data tfoot td.page a{
+	color:#09c;
+	}
+
+.pagebox .area table.data tfoot td.page a:hover{
+	border-color:#09c;
+	}
+
+.pagebox .area table.data tfoot td.page a.active{
+	border-color:#09c;
+	}
+
+.pagebox .area .pages,.layer-pages{
+	color:#999;
+	}
+.pagebox .area .pages span,.pagebox .area .pages a
+.layer-pages span,.layer-pages a{
+	border-color:#eee;
+	}
+
+.pagebox .area .pages a,.layer-pages a{
+	color:#09c;
+	}
+
+.pagebox .area .pages a:hover,.layer-pages a:hover{
+	border-color:#09c;
+	}
+
+.pagebox .area .pages a.active,.layer-pages a.active{
+	border-color:#09c;
+	}
+
+.pagebox .respond{
+	background:#fff;
+	}
+
+.pagebox .respond h2{
+	border-color:#09c;
+	}
+
+.pagebox .respond h2 a{
+	color:#09c;
+	}
+
+.pagebox .respond li{
+	border-color:#eee;
+	}
+
+.pagebox .respond li h3 a{
+	color:#666;
+	}
+
+.pagebox .respond li h3 a:hover{
+	color:#09c;
+	}
+
+.pagebox .respond li > span{
+	color:#999;
+	}
+
+/* 通用弹出层样式定义 */
+.dialog .tag{
+	border-color:#09c;
+}
+
+.dialog .tag a{
+	color:#999;
+}
+
+.dialog .tag a:hover{
+	color:#09c;
+}
+
+.dialog .tag a.active{
+	color:#fff;
+	background:#09c;
+}
+
+.dialog ul.form li > em{
+	background:#09c;
+	color:#fff;
+}
+
+.dialog ul.form li input[type=text],.dialog ul.form li input[type=password],.dialog ul.form li input[type=email],select,.dialog ul.form li textarea{
+	border-color:#eee;
+}
+
+
+.dialog ul.form li input:focus,.dialog ul.form li textarea:focus{
+	border-color:#09c;
+}
+.uew-select .uew-select-value {
+    border-radius:0;
+    border-color:#eee;
+}
+.dialog ul.form li > span{
+	color:#999;
+}
+
+.dialog ul.form li label{
+	color:#999;
+}
+.dialog ul.form li label.error{
+	color:#C00;
+}
+.dialog ul.form li > span a{
+	color:#09c;
+}
+
+.dialog .button input{
+	background:#eee;
+	color:#333;
+}
+
+.dialog .button input.color{
+	background:#09c;
+	color:#fff;
+}
+
+.dialog .dialog-btn a{
+	background:#09c;
+	color:#fff;
+}
+
+/* 功能弹出层样式定义 */
+#user .userface span.photo{
+	border-color:#ccc;
+}
+
+#user .userface span.usertype{
+	color:#999;
+}
+
+#user .userinfo{
+	border-color:#eee;
+}
+
+/* 创建、修改订单样式定义 */
+.product .total{
+	background:#fff;
+	border-color:#09c;
+}
+
+.product .total font{
+	color:#f90;
+}
+
+.product .total a{
+	background:#09c;
+	color:#fff;
+}
+
+.product .area .box{
+	border-color:#eee;
+}
+
+.product .area .box:hover{
+	border-color:#09c;
+}
+
+.product .area .box span.img{
+	background:#f5f5f5;
+}
+
+.product .area .box span.price{
+	color:#999;
+}
+
+.product .area .box span.price font{
+	color:#09c;
+}
+
+.product .area > div.active{
+	border-color:#09c;
+}
+
+
+
+.dc_select:hover .down {background: url('image/uew_icon_hover.png') no-repeat;background-position: center center;}
+/*.dc_select .down ,.dc_select.disabled .down{background: url('image/uew_icon.png') no-repeat;background-position: center center;}*/
+.dc_select .dropbox:hover{ border-color:#09c}
+.dc_select .dropbox:hover .down{color: #09c;}
+.dc_down_list li:hover,.dc_down_list li.hover {background-color: #09c;color:white;border-color:#fff;}
+.dc_select.disabled  .dropbox:hover{ border-color:#ccc}
+
+
+
+
+span.green{
+    color:green;
+    /*border: green 1px solid;*/
+    padding: 2px 6px;
+}
+/*页面样式*/
+/*.modular-info ul.form li > em{
+	background:#09c;
+	color:#fff;
+}*/
+.modular-info ul.form li > em{
+	color:#666;
+}
+
+.modular-info ul.form li input[type=text],.modular-info ul.form li input[type=password],.modular-info ul.form li input[type=email],select,.modular-info ul.form li textarea{
+	border-color:#eee;
+}
+table.job-item-table tbody td input[type=text],table.job-item-table tbody td input[type=password],table.job-item-table tbody td input[type=email],table.job-item-table tbody td textarea{
+	border-color:#eee;
+}
+
+.modular-info ul.form li input:focus,.modular-info ul.form li textarea:focus,.modular-info ul.form li input.input-title[type=text]:focus,
+table.job-item-table tbody td input:focus,table.job-item-table tbody td textarea:focus,table.job-item-table tbody td input.input-title[type=text]:focus{
+	border-color:#09c;
+}
+.uew-select .uew-select-value {
+    border-radius:0;
+    border-color:#eee;
+}
+.modular-info ul.form li > span{
+	color:#999;
+}
+
+.modular-info ul.form li label{
+	color:#999;
+}
+.modular-info ul.form li label.error{
+	color:#C00;
+}
+.modular-info ul.form li > span a{
+	color:#09c;
+}
+.dataTabs-ctrol-down span.curr{color:#09C;}
+.product .area .box span.select{background:#09c;}
+.desktop-itme-row h1{color:#09c; border-bottom:2px solid #09C;}
+.desktop-itme-row h1 strong{background: #09C; color: #fff;}
+.desktop-apps-list li a{ color:#09C;}
+.desktop-apps-list li a:hover{background:#09c; color:#FFF;text-decoration: none;}
+.content-pages-title{border-bottom: 2px solid #09c;}
+.archives-modular .modular-title h2{border-left:3px solid #09c;}
+.modular-info ul.form > li .itemclose:hover{text-decoration: none; color: #FF0000;}
+.check-optional-box .optional-list li input[type=text]:focus{border-color:#09c; background:#fff; box-shadow: none;}
+.check-optional-box .optional-list li .itemClose{/*color:#fff; background:#09c;*/}
+.check-optional-box .optional-list li a i{color: #09c;}
+.check-optional-box .optional-list li.active a{background:#fff; border: 1px solid #09c;}
+.resume-menu-box .resume-menu-list li a:hover{color:#09c;}
+.resume-menu-box .resume-menu-list li.active a{background: #09c; color: #fff;}
+.btnBlue,a.btnBlue{color: #fff; border: 1px solid #09c; background-color: #09c;}
+.btnBlue:hover,a.btnBlue:hover{color: #fff;background-color: #008fbf;border-color: #008fbf;}
+.job-item-table tbody tr:not(.last):hover td .itemclose:hover{ color: #FF0000; background:#fff;}
+.layer-dialog-close-btn:hover{text-decoration: none; color: #FF5500; box-shadow: 0px 0px 5px #000;-webkit-box-shadow: 0px 0px 5px #000;-moz-box-shadow: 0px 0px 5px #000;-o-box-shadow: 0px 0px 5px #000;}
+.table-item-ctrol-btn:hover{color: #FF0000;}
+
+table.noticedata tbody tr.row-unread td{font-weight: bold;}
+table.noticedata tbody tr.row-unread tbody tr.row-unread td a a{display: inline-block; font-style: normal; color: #ddd;}
+.pagebox .area table.data.noticedata tbody tr td a{color: #999;}
+.pagebox .area table.data.noticedata tbody tr td a:hover{text-decoration: none;}
+.pagebox .area table.data.noticedata tbody tr.row-unread td a{color: #09c;}
+table.noticedata tbody tr.row-unread td i{color: #09c;}
+table.noticedata tbody td i{color: #999;}
+table.noticedata tbody td{color: #999;}
+.content-notice-list li a,.notice-add-list li a{color:#09c;}
+.content-notice-list li a:hover,.notice-add-list li a:hover{text-decoration: underline;}
+.content-notice-list li .notice-textarea:focus,input.auto-text:focus{border-color:#09c;}
+.content-notice-list li .notice-textarea:active,textarea.notice-textarea:active,input.auto-text:active,.noticeTx:active{-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);}
+.layui-layer-btn .layui-layer-btn0{border-color: #09c;background-color: #09c;}
+
+.notice-content-head{border-bottom: 2px solid #09c;}
+.notice-head-list li a{background: #eee; color: #666;}
+.notice-head-list li.curr a{background:#09c; color: #fff;}
+.auto-text-box span,.selected-content .selected-tiems{background:#eaeaea; border: 1px solid #eee;}
+.auto-text-box span:hover,.selected-content .selected-tiems:hover{background:#fff; border-color:#FF5500;color: #FF5500;}
+.auto-text-box span:hover i,.selected-content .selected-tiems:hover i{color: #FF5500;}
+.auto-text-box span i,.selected-content .selected-tiems i{color: #8a8a8a;}
+.auto-text-box span i:hover,.selected-content .selected-tiems i:hover{color:#FF5500;}
+.tree-section ul li div a:hover{color: #09c;}
+.tree-section ul li div a:active{color:#666;}
+
+dl.info-body-list dd .info-content-item{background: #fff; color:#333; box-shadow:0px 1px 3px #B1B1B1;}
+dl.info-body-list dt .info-content-item{background:rgb(205, 240, 121);border: 1px solid rgb(155,190,72); color:#333;box-shadow:0px 1px 3px #B1B1B1;}
+dl.info-body-list dd .item-fujian a,dl.info-body-list dt .item-fujian a{color:#333;}
+dl.info-body-list dd .item-fujian a:hover,dl.info-body-list dt .item-fujian a:hover{text-decoration: underline;color:#09c;}
+dl.info-body-list dd .user-pic a,dl.info-body-list dt .user-pic a{color:#888;}
+
+textarea.info-textarea-item:focus{border-color: #09c;}
+textarea.info-textarea-item:active{-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);}
+.notice-head-info span em{font-style: normal; color:#FF0000;}
+.bbs-info-list li .item-bbs-download a{color:#09c;}
+.bbs-info-list li .item-bbs-download a:hover{text-decoration: underline;}
+.search-dom-list li:hover{background:#f8f8f8;}
+.search-dom-list li.active{background:#09c; color: #fff;}
+.backlog-list-tiem li{color: #888;}
+.backlog-list-tiem li a{color: #666;}
+.backlog-list-tiem li:hover{background:#f8f8f8;}
+.backlog-list-tiem li a:hover,.ui-questions-content-list li .theme-type .module-menu .module-ctrl a:hover,.course-ctrl-box a:hover{color:#09c;}
+.header li a label.apps-info{
+	color: #fff;
+	animation:colors 1s linear 0ms infinite normal forwards;
+    -webkit-animation:colors 1s linear 0ms infinite normal forwards;
+    -moz-animation:colors 1s linear 0ms infinite normal forwards;
+    -o-animation:colors 1s linear 0ms infinite normal forwards;
+    }
+@keyframes colors{
+    0%{
+        background: #FF5500;
+    }
+    100%{
+        background: #ff0000;
+    }
+ }
+
+.select-items-ctrol .select-label{border-color:#eee;background: #eee;}
+.select-items-ctrol .select-label:hover{background: #e8e8e8;text-decoration: none;}
+.select-items-ctrol .select-label.active i{color: #09c;}
+.select-items-ctrol .select-label.active{background:#fff; border-color:#09c;}
+.sidebar a span strong{background:#09c;}
+.desks-module-items{background: #fff;}
+
+.condition-txt[type=text]:active,.condition-txt[type=password]:active,.condition-txt[type=email]:active,.condition-txt[type=search]:active{
+	-webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.condition-txt[type=text]:focus,.condition-txt[type=password]:focus,.condition-txt[type=email]:focus,.condition-txt[type=search]:focus{
+	border-color:#09c;
+}
+
+.set-user-info-menu li a:hover{color:#666;background: #eee;}
+.set-user-info-menu li.active a,
+.filtrate-list dd.active a{color:#fff;background: #09c;}
+.T_edit:hover,.cq-edit-title{background:#FDF9CD;}
+.cq-edit-title{border: 1px solid #1C658B;}
+.ranklist-module h2{color:#4c5e70;}
+table.ranklist-data thead th{background:#f4f8fb; color:#0099cc;}
+.itembank-menu-list>li li>i{background:#09c;}
+.itembank-menu-list>li li>a:hover{color:#fff; background:#FFA91B !important;}
+.itembank-menu-list>li>a{color:#0099cc;}
+.itembank-menu-list li>.ctrl-btn{color:#FFA91B !important;}
+.itembank-head-h3 span{color:#e60000;}
+.group-examination-list>li .group-list-foot,
+.exam-topic-info-list>li .group-list-foot{background:#fff8f2;}
+.group-examination-list>li .group-list-foot label span,
+.exam-topic-info-list>li .group-list-foot label span{color:#e60000;}
+.group-examination-list>li .group-list-foot a,
+.exam-topic-info-list>li .group-list-foot a,
+.exam-topic-info-list>li .group-list-foot label,
+.exam-topic-info-list>li .group-list-foot strong,
+.column-title .t-large{color:#09c;}
+.group-examination-list>li .group-list-foot a i,
+.exam-topic-info-list>li .group-list-foot a i{color:#FFA91B;}
+.column-body{background:#f7f7f7;}
+.column-label{background:#ff7800; color:#fff;}
+table.group-topic-table th{background:#09c; color:#fff;}
+table.group-topic-table td .x-item{color:#FFA91B;}
+table.group-topic-table td.items-row-2,
+.input-ctrol-items .in-tx{color:#09c;}
+.exam-item-title{color:#09c;}
+.exam-item-title i{color:#FFA91B;}
+table.group-record-data thead th{background:#fff2e0;}
+table.group-record-data tbody tr:nth-child(odd){background:#f9f9f9;}
+table.group-record-data a.ctrl-item,table.group-record-data .ctrl-item{color:#666 !important;}
+table.group-record-data a{color:#09c;}
+.exam-section-title h1 .edit-btn{color:#09c;}
+.exam-section-abstract p.ab-tiem-1{color:#767373;}
+.exam-section-abstract p.ab-tiem-2{color:#666;}
+.topic-position-ctrol{background:#09c; color:#fff;}
+.topic-edit-items-list>li:hover{border-color:#09c !important;}
+.get-times-box span{background:#09c; color:#fff;}
+.edit-plug-box a:hover,.color-syle{color:#09c;}
+table.group-record-data a:hover, table.group-record-data .ctrl-item:hover{color:#09c !important;}
+.exam-tx-color,input.underline-tx{color:#09c !important; border-color:#09c !important;}
+.exam-tx-colorR{color:#f00 !important; border-color:#f00 !important;}
+textarea.exam-textarea,.exam-textarea{background:#f6f6f6 !important;}
+.answer-over-style label i{color:#ffa91b !important;}
+.verdict-active span,.judge-tx-info{color:#f00 !important;}
+

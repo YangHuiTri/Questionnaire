@@ -1,0 +1,156 @@
+html,
+body {
+	color: #505050;
+	background: #ebebeb;
+	height: 100%;
+}
+a {
+    color: #000;
+	outline: none;
+	text-decoration: none;
+}
+a:hover {
+	color: #2D8FD9;
+}
+ul,li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+    border: none;
+}
+
+
+.clear{
+    clear: both;
+}
+header{
+	background-image:url("../image/bg_fistScreen.jpg");
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+	height: 180px;
+}
+
+.logo{
+    height:50px;
+    width: 120px;
+    color: #f1f1f1;
+    font-size: 18px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.login{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.login li{
+    display: inline;
+}
+.login li a{
+    color: #f1f1f1;
+    font-size: 16px;
+    margin-right: 30px;
+}
+.search{
+    text-align: center;
+    padding-top: 100px;
+    border-radius: 25px;
+}
+.txtInput{
+    width: 400px;
+    height: 41px;
+    line-height: 42px;
+    border: #ffffff 1px solid;
+    border-radius: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    background: rgba(0,0,0,.2);
+    outline: none;
+    padding-left: 15px;
+}
+.searchBtn{
+    display: inline-block;
+    width: 101px;
+    height: 42px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    line-height: 42px;
+    margin-left: -102px;
+    vertical-align: inherit;
+}
+
+
+.nav{
+	text-align: center;
+	height: 60px;
+    background-color: #ffffff;
+}
+.nav li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 30px 0 0;
+}
+.menu{
+    padding-top: 20px;
+}
+.menu li{
+	display: inline;
+	font-size: 16px ;
+	padding: 0 20px;
+    margin: 0 20px;
+}
+.menu li a{
+	color: #505050;
+}
+
+
+
+.content{
+    padding-left: 130px;
+    margin-top: 30px;
+}
+.container ul{
+	text-align: center;
+	display: inline;
+    background-color: #000000;
+}
+
+.container li{
+	width: 314px;
+    height: 200px;
+	display: inline;
+	float: left;
+    margin: 20px;
+    box-shadow: 0 0 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.box{
+	margin-left: 24px;
+	display: inline;
+}
+.block h2{
+	font-size: 20px;
+}
+.block p{
+	font-size: 12px;
+	color:#808080;
+}
+.page{
+    width: 30%;
+    height: 30px;
+    margin: 0 auto;
+
+}
+.page li{
+    display: inline-block;
+    padding: 0 5px;
+}
+footer{
+    height: 50px;
+    text-align: center;
+}

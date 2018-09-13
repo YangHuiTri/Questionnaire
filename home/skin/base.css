@@ -1,0 +1,412 @@
+/* CSS Document */
+
+*{margin:0;padding:0;font-family:"Microsoft YaHei";}
+html,body{height:100%;font-size:12px;}
+/* -webkit-text-size-adjust:none; 解决Chrome浏览器最小只能显示12px字体的问题 */
+body{-webkit-text-size-adjust:none;overflow:hidden;color:#333;}
+a{text-decoration:none;color: inherit;}
+img{border:0;}
+li{list-style:none;}
+input{border:0;color:#333;}
+.clear{display:block;width:0;height:0;margin:0;padding:0;clear:both;font-size:0;}
+
+/* 去除链接及表单焦点虚线边框 */
+a:focus,input[type=button],input[type=submit],input[type=image]{outline:none;cursor:pointer;}
+table{font-size: 12px;}
+/* 去除Chrome浏览器文本框选中后的黄色边框 */
+input,button,select,textarea{outline:none;font-size:12px;}
+textarea{resize:none;}
+
+/* 公用样式定义 */
+h1,h2,h3,h4,h5,h6,h7{font-size:12px;font-weight:normal;}
+.relative{width:100%;height:100%;position:relative;}
+.left{float:left;}
+.right{float:right;}
+
+/*载入icons字体*/
+@font-face {font-family: 'iconfont';
+    src: url('font/iconfont.eot'); /* IE9*/
+    src: url('font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+[class^="icon-"], [class*="icon-"]{
+    font-family:"iconfont" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+
+
+/*定义图标*/
+
+.icon-0:before {content:"\e7d9";}/*0*/
+.icon-1:before {content:"\e7da";}/*1*/
+.icon-2:before {content:"\e7db";}/*2*/
+.icon-3:before {content:"\e7b1";}/*3*/
+.icon-4:before {content:"\e7dc";}/*4*/
+.icon-5:before {content:"\e7ca";}/*5*/
+.icon-6:before {content:"\e7a9";}/*6*/
+.icon-7:before {content:"\e7cb";}/*7*/
+.icon-8:before {content:"\e7c8";}/*8*/
+.icon-9:before {content:"\e7c9";}/*9*/
+
+.icon-fenxi:before {content:"\e7f1";}/*成绩分析*/
+.icon-banjikaoqin:before {content:"\e7eb";}/*班级考勤*/
+.icon-lock:before {content:"\e660";}/*锁*/
+.icon-radar:before {content:"\e786";}/*雷达*/
+.icon-meetrecord:before {content:"\e7e6";}/*会议记录*/
+.icon-meetsign:before {content:"\e7e7";}/*会议考勤*/
+
+.icon-addition:before {content:"\e7e0";}/*添加*/
+.icon-biaoqing:before {content:"\e7df";}/*表情*/
+.icon-statement:before {content:"\e7b7";}/*报表*/
+.icon-tel:before {content:"\e65d";}/*座机/电话*/
+.icon-analyzeJG:before {content:"\e6eb";}/*架构分析*/
+.icon-forbidden:before {content:"\e6a5";}/*禁用*/
+.icon-fullscreen:before {content:"\e725";}/*全屏*/
+.icon-monitoring:before {content:"\e7d4";}/*监控*/
+.icon-control:before {content:"\e79e";}/*控制*/
+.icon-geometry:before {content:"\e76e";}/*几何*/
+.icon-geometrys:before {content:"\e793";}/*几何*/
+.icon-tailor:before {content:"\e770";}/*裁剪*/
+.icon-tailorpic:before {content:"\e77a";}/*图片裁剪*/
+.icon-rankinglist:before {content:"\e7b0";}/*排行榜*/
+.icon-touch:before {content:"\e727";}/*触摸*/
+.icon-period:before {content:"\e740";}/*周期*/
+.icon-chemistry:before {content:"\e7ba";}/*化学*/
+.icon-hr:before {content:"\e68d";}/*人力资源*/
+.icon-jurisdiction:before {content:"\e690";}/*权限配置*/
+.icon-func:before {content:"\e789";}/*函数*/
+.icon-recharge:before {content:"\e7cd";}/*充值*/
+.icon-championship:before {content:"\e79a";}/*冠军/奖牌*/
+.icon-feedbackedit:before {content:"\e6e2";}/*反馈*/
+.icon-feedbacklist:before {content:"\e767";}/*反馈列表*/
+.icon-title:before {content:"\e762";}/*标题*/
+.icon-yesterday:before {content:"\e74c";}/*昨天*/
+.icon-wrong:before {content:"\e6e8";}/*错*/
+.icon-correct:before {content:"\e6ed";}/*对*/
+.icon-errortip:before {content:"\e6f0";}/*错误提示*/
+.icon-calculator:before {content:"\e7d6";}/*计算器*/
+.icon-festival:before {content:"\e757";}/*节日*/
+.icon-purse:before {content:"\e7d2";}/*钱袋*/
+.icon-writing:before {content:"\e798";}/*写作*/
+.icon-performance:before {content:"\e7cc";}/*成绩*/
+.icon-apartment:before {content:"\e7cf";}/*公寓*/
+.icon-floor:before {content:"\e73a";}/*楼层*/
+.icon-fingerprint:before {content:"\e719";}/*指纹*/
+.icon-server:before {content:"\e6b9";}/*服务器*/
+.icon-cloudnotes:before {content:"\e7b5";}/*云笔记*/
+.icon-toilet:before {content:"\e74d";}/*洗手间*/
+.icon-calendar:before {content:"\e73b";}/*日历*/
+.icon-classroom:before {content:"\e7a0";}/*课堂*/
+.icon-drawing:before {content:"\e79f";}/*绘图*/
+.icon-painting:before {content:"\e7aa";}/*绘画*/
+.icon-refreshDown:before {content:"\e7b8";}/*下拉刷新*/
+.icon-refreshUp:before {content:"\e7a6";}/*上拉刷新*/
+.icon-refresh:before {content:"\e7a1";}/*刷新*/
+.icon-wirelessdev:before {content:"\e7a7";}/*无线路由*/
+.icon-unitexception:before {content:"\e72f";}/*设备异常*/
+.icon-wirelesseq:before {content:"\e7d0";}/*无线电设备*/
+.icon-officeeq:before {content:"\e7d8";}/*办公设备*/
+.icon-eqopinion:before {content:"\e7c1";}/*设备意见*/
+.icon-assapp:before {content:"\e7bf";}/*关联设备*/
+.icon-richScan:before {content:"\e78e";}/*扫一扫*/
+.icon-idcardrz:before {content:"\e7bc";}/*实名认证*/
+.icon-identitycard:before {content:"\e7b6";}/*身份证1*/
+.icon-identitycardB:before {content:"\e7ae";}/*身份证2*/
+.icon-playrecorded:before {content:"\e79c";}/*播放记录*/
+.icon-videoa:before {content:"\e7b4";}/*视频1*/
+.icon-videob:before {content:"\e7d1";}/*视频2*/
+.icon-relaystation:before {content:"\e615";}/*中继站*/
+.icon-card:before {content:"\e7a3";}/*卡*/
+.icon-cardbag:before {content:"\e79b";}/*卡管理*/
+.icon-arrleft:before {content:"\e702";}/*向左*/
+.icon-arrright:before {content:"\e701";}/*向右*/
+.icon-menufn:before{content:"\e766";}/*菜单功能*/
+.icon-site:before {content:"\e747";}/*地点*/
+.icon-listitems:before {content:"\e60a";}/*列表*/
+.icon-default:before {content:"\e7ce";}/*默认*/
+.icon-singleChoice:before {content:"\e790";}/*单选题*/
+.icon-multipleChoice:before {content:"\e76f";}/*多选题*/
+.icon-picChoice:before{content:"\e764";}/*图片*/
+.icon-picsChoice:before{content:"\e753";}/*图片库*/
+.icon-gapFilling:before{content:"\e799";}/*填空题*/
+.icon-multiRow:before{content:"\e77e";}/*完形填空*/
+.icon-describe:before{content:"\e780";}/*描述*/
+.icon-clone:before {content:"\e668";}/*克隆/复制*/
+
+.icon-call:before {content:"\e63b";}/*拨号*/
+.icon-comparison:before {content:"\e758";}/*对比*/
+.icon-champion:before {content:"\e759";}/*冠军*/
+.icon-warning:before {content:"\e6a3";}/*异常提示*/
+.icon-knowledgebase:before {content:"\e750";}/*知识库*/
+.icon-situation:before {content:"\e749";}/*概况*/
+.icon-repast:before {content:"\e73e";}/*餐饮*/
+.icon-scale:before {content:"\e72d";}/*指标*/
+.icon-content:before {content:"\e659";}/*内容*/
+.icon-emiplane:before {content:"\e726";}/*纸飞机*/
+.icon-reminder:before {content:"\e6ec";}/*帮助信息提示*/
+.icon-editopen:before {content:"\e639";}/*编辑笔*/
+.icon-upward:before {content:"\e6ff";}/*向上*/
+.icon-downward:before {content:"\e6f8";}/*向下*/
+.icon-see:before {content:"\e70f";}/*看*/
+.icon-play:before {content:"\e723";}/*播放*/
+.icon-newsvideo:before {content:"\e722";}/*视频标识*/
+.icon-newscomment:before {content:"\e62b";}/*评论*/
+.icon-thumb:before {content:"\e71f";}/*大拇指1*/
+.icon-newsthumb:before {content:"\e721";}/*大拇指2*/
+.icon-function:before {content:"\e6a6";}/*功能*/
+.icon-404:before {content:"\e6d7";}/*404*/
+.icon-feedback:before {content:"\e633";}/*反馈*/
+.icon-addattention:before {content:"\e717";}/*添加关注*/
+.icon-attention:before {content:"\e714";}/*关注*/
+.icon-enshrine:before {content:"\e711";}/*收藏*/
+.icon-history:before {content:"\e606";}/*历史*/
+.icon-time:before {content:"\e653";}/*时间*/
+.icon-set:before {content:"\e65b";}/*设置*/
+.icon-back:before {content:"\e6fb";}/*返回*/
+.icon-forward:before {content:"\e6fc";}/*后退*/
+
+.icon-target:before {content:"\e60c";}/*指标*/
+.icon-tendency:before {content:"\e686";}/*走势*/
+.icon-assignment:before {content:"\e667";}/*作业*/
+.icon-contacts:before {content:"\e6c3";}/*通讯录*/
+.icon-notepad:before {content:"\e695";}/*记事本*/
+.icon-search:before {content:"\e6ab";}/*搜索*/
+.icon-picupdate:before {content:"\e652";}/*添加图片*/
+.icon-clouduploading:before {content:"\e68b";}/*云上传*/
+.icon-clouddownload:before {content:"\e6af";}/*云下载*/
+.icon-uploading:before {content:"\e625";}/*上传*/
+.icon-download:before {content:"\e665";}/*下载*/
+.icon-annc:before {content:"\e687";}/*公告*/
+.icon-right:before {content:"\e6f3";}/*右边三角形*/
+.icon-adduser:before {content:"\e6f4";}/*添加用户*/
+.icon-usermsg:before {content:"\e6aa";}/*用户管理*/
+.icon-user:before {content:"\e67d";}/*用户*/
+.icon-key:before {content:"\e62e";}/*钥匙*/
+.icon-delx:before {content:"\e6f2";}/*删除2*/
+.icon-jian:before {content:"\e682";}/*减*/
+.icon-plus:before {content:"\e610";}/*加*/
+.icon-framework:before {content:"\e664";}/*架构*/
+.icon-expand:before {content:"\e6d4";}/*展开*/
+.icon-collapse:before {content:"\e6d3";}/*折叠*/
+.icon-edit:before {content:"\e66c";}/*编辑*/
+.icon-fold:before {content:"\e6b4";}/*圆形减*/
+.icon-del:before {content:"\e642";}/*删除*/
+.icon-addfujian:before {content:"\e6d0";}/*附件1*/
+.icon-fujian:before {content:"\e6d1";}/*附件2*/
+.icon-email:before {content:"\e692";}/*信封1*/
+.icon-template:before {content:"\e64f";}/*模版*/
+.icon-export:before {content:"\e627";}/*导出*/
+.icon-import:before {content:"\e651";}/*导入*/
+.icon-addlist:before {content:"\e61a";}/*添加列表*/
+.icon-list:before {content:"\e624";}/*列表*/
+.icon-more:before {content:"\e64d";}/*更多*/
+.icon-close:before {content:"\e694";}/*关闭*/
+.icon-checktrue:before {content:"\e64b";}/*圆形check选中*/
+.icon-checkfalse:before {content:"\e657";}/*圆形check未选*/
+.icon-schoolboy:before {content:"\e673";}/*男生*/
+.icon-schoolgirl:before {content:"\e674";}/*女生*/
+.icon-telephone:before {content:"\e698";}/*手机*/
+.icon-home:before {content:"\e6bc"; }/*产品应用*/
+.icon-chat:before {content:"\e609"; }/*聊天*/
+.icon-add:before {content:"\e646"; }/*添加*/
+.icon-up:before{content:"\e6a7"; }/*向上*/
+.icon-down:before{content:"\e699";}/*向下*/
+.icon-tips:before{content:"\e684";}/*提示铃铛*/
+.icon-conver:before {content:"\e6b2";}/*菜单*/
+.icon-teacher:before {content:"\e6cb";}/*教师*/
+.icon-studentInfo:before {content:"\e631";}/*学生信息*/
+.icon-publicFile:before {content:"\e6a8";}/*公共管理*/
+.icon-approvals:before {content:"\e636";}/*行政审批*/
+.icon-honor:before {content:"\e607";}/*荣誉*/
+.icon-meeting:before {content:"\e64e";}/*会议*/
+.icon-outbox:before {content:"\e60e";}/*发件箱*/
+.icon-infoMsg:before {content:"\e67f";}/*信封2*/
+.icon-shortMessage:before {content:"\e63c";}/*信息*/
+.icon-targetMsg:before {content:"\e6cf";}/*目标*/
+.icon-appset:before {content:"\e63e";}/*应用设置*/
+
+
+
+
+.pagebox{
+	position:absolute;
+	top:70px;
+	left:100px;
+	right:100px;
+	bottom:0;
+	padding:20px 20px 0px 20px;
+	/*-o-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;*/
+	}
+
+
+/* 内容框架样式定义开始 */
+.pagebox font.red{
+	color:#f00;
+	font-weight:bold;
+	}
+
+.pagebox font.gray{
+	color:#aaa;
+	}
+
+.pagebox font.green{
+	color:#468c00;
+	font-weight:bold;
+	}
+
+.pagebox .title{
+	padding:20px;
+	}
+
+.pagebox .title .name{
+	padding-left:10px;
+	font-weight:bold;
+	border-left:#fff 3px solid;
+	}
+
+.pagebox .title .button{
+	margin-left:20px;
+	}
+
+.pagebox .title .button a{
+	padding:2px 6px;
+	margin:0 5px;
+	border:#fff 1px solid;
+	}
+
+.pagebox .title .button a span{
+	padding-left:28px;
+	}
+
+.pagebox .title .function{
+	margin-left:20px;
+	}
+
+.pagebox .title .function a:hover{
+	text-decoration:underline;
+	}
+
+.pagebox .area{
+	padding:5px 20px 20px 20px;
+	margin-bottom:20px;
+	}
+
+.pagebox .area input[type=button]{
+	margin:0 5px;
+	padding:2px 6px;
+	border:#fff 1px solid;
+	}
+
+.pagebox .area table.data{
+	width:100%;
+	}
+.pagebox .area table.data .text-right {
+    text-align: right;
+    position: relative;
+    padding: 0 10px;
+}
+.pagebox .area table.data i:not(.icon-down){display: inline-block; font-size: 14px;}
+.pagebox .area table.data .icon-schoolgirl{color: #FF7800;}
+.pagebox .area table.data .icon-schoolboy{color: #09c;}
+.pagebox .area table.data thead th{
+	line-height:50px;
+	border-bottom:#fff 2px solid;
+	}
+
+.pagebox .area table.data tbody td{
+	text-align:center;
+	line-height:40px;
+	border-bottom:#fff 1px dotted;
+	}
+
+.pagebox .area table.data tbody td a:hover{
+	text-decoration:underline;
+	}
+.pagebox .area table.data tbody tr:hover{background:#F9F9FA;}
+.pagebox .area table.data tbody tr:active{cursor: pointer;}
+.pagebox .area table.data .dataTabs-ctrol-down .dataTabs-ctrol-info{border: 1px dotted #fff; border-top: 0;}
+.pagebox .area table.data tbody tr:hover .dataTabs-ctrol-down .dataTabs-ctrol-info{background:#F9F9FA;}
+.pagebox .area table.data tfoot td{
+	padding-top:20px;
+	}
+.pagebox .area table.data tfoot td.page{
+	text-align:right;
+	}
+
+.pagebox .area table.data tfoot td.page span,.pagebox .area table.data tfoot td.page a{
+	padding:4px 6px;
+	margin:0 5px;
+	border-bottom:#fff 2px solid;
+	}
+
+.pagebox .area table.data tfoot td.page a:hover{
+	font-weight:bold;
+	}
+
+.pagebox .area table.data tfoot td.page a.active{
+	font-weight:bold;
+	}
+
+.pagebox .respond{
+	float:left;
+	margin:0 calc(15px*3/2) 20px 0;
+	padding:20px;
+	width:calc(100%/3 - 55px);
+	}
+
+.pagebox .respond:nth-child(3){
+	margin-right:0;
+	}
+
+.pagebox .respond h2{
+	padding-bottom:5px;
+	font-weight:bold;
+	border-bottom:#fff 2px solid;
+	}
+
+.pagebox .respond ul{
+	margin-top:10px;
+	}
+
+.pagebox .respond li{
+	height:30px;
+	line-height:30px;
+	border-bottom:#fff 1px dotted;
+	}
+
+.pagebox .respond li h3{
+	float:left;
+	}
+
+.pagebox .respond li span{
+	float:right;
+	}
+
+.pagebox .respond li font{
+	padding:0 5px;
+	}
+
+
+/* 统一模拟下拉菜单样式定义 */
+.dc_select{  display:inline-block; text-align:left;}
+.dc_select > .dropbox > .down {float: right;width: 28px;display: inline-block;height: 28px;text-align: center;background-position: center center;line-height:28px;margin-left:0;}
+.dc_down_list {border-left:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;border-top:0px solid #ccc;position:absolute;z-index:10000;background-color:white;}
+.dc_down_list.up {border-bottom-width:0px;border-top-width:1px;}
+.dc_down_list li{margin-left:0; height:28px;line-height:28px;font-size:12px;border-top:1px solid #fff;border-bottom:1px solid #fff;cursor:pointer; overflow:hidden; word-break:keep-all;padding-left:10px; padding-right:10px;/*float:left;*/}
+.dc_down_list li.init{ float:none;}
+.dc_select > .dropbox{ height:28px;line-height:28px; border:1px solid #ccc; cursor:pointer;}
+.dc_select > .dropbox .down{ color: #ccc;}
+.dc_select > .dropbox > .text { color:black;padding-left: 10px;padding-right: 10px;overflow:hidden; word-break:keep-all;display:inline-block;line-height:28px;margin-left:0px; float:left;}
+.dc_select.disabled > .dropbox > .text { background-color:#eee;}
+.dc_select.disabled > .dropbox { cursor:default;}
