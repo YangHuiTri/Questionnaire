@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>-.-</title>
+    <link rel="stylesheet" href="../styles/backstage.css">
+</head>
+
+<body>
+<div class="details">
+    <div class="details_operation clearfix">
+        <div class="bui_select">
+            <input type="button" value="添&nbsp;&nbsp;加" class="add btn" onclick="addUser()"><span style="background: #CCCCCC">&nbsp;&nbsp;&nbsp;&nbsp;<?php echo "已注册用户:".$rows."人";?></span>
+        </div>
+    </div>
+    <!--表格-->
+    <table class="table" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <th width="15%">编号</th>
+            <th width="20%">用户名称</th>
+            <th width="20%">用户邮箱</th>
+            <th width="20%">是否激活</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php while($row = mysql_fetch_assoc($res)):?>
+        <tr align="center">
+            <!--这里的id和for里面的c1 需要循环出来-->
+            <td><label id="edit"  class="label"><?php echo $row['id']; ?></label></td>
+            <td><?php echo $row['name']; ?></td>
+            <td><?php echo $row['email']; ?></td>
+            <td><?php if($row['status'] == 1){echo "已激活";}?></td>
+            <?php echo "<td align='center'><input type='button' value='修改' class='btn' onclick='editUser({$row['id']})'><input type='button' value='删除' class='btn' onclick='delUser({$row['id']})'>"; ?>
+            </td>
+        </tr>
+        <?php endwhile;?>
+        </tbody>
+    </table>
+</div>
+</body>
+<script type="text/javascript">
+
+    function addUser() {
+        window.location = "./addUser.php";
+    }
+
+    function editUser(id) {
+        window.location = "./editUser.php?id=" + id;
+    }
+
+    function delUser(id) {
+        var arr= location.search;
+        var lenth = arr.length;
+        var role = arr[lenth-1];
+        if (window.confirm("您确定要删除id为"+id+"的用户吗？删除之后不可以恢复哦！！！")) {
+            window.location = "./delPerson.php?id="+id+"&role="+role;
+        }
+    }
+</script>
+</html>

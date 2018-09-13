@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>-.-</title>
+    <meta name="viewport" content="width=device-width;initial-scale=1">
+    <link href="../js/bootstrap.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../styles/backstage.css">
+    <style type="text/css">
+        a:link {
+            font-size: 12px;
+            color: #0C2C4A;
+            text-decoration: none;
+        }
+
+        a:visited {
+            font-size: 12px;
+            color: #0C2C4A;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-size: 12px;
+            color: #999999;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="details">
+    <span style="background: #CCCCCC;">已收纳问卷:<?php echo $rows4;?>条&nbsp;&nbsp;&nbsp;&nbsp;已上架:<?php echo $rows2;?>条&nbsp;&nbsp;&nbsp;&nbsp;待上架:<?php echo $rows3;?>条</span>
+    <!--表格-->
+    <table class="table" cellspacing="0" cellpadding="0">
+        <thead>
+        <tr>
+            <th width="15%">编号</th>
+            <th width="20%">问卷分类</th>
+            <th width="20%">问卷名称</th>
+            <th width="20%">是否上架</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php while($row = mysql_fetch_assoc($res)):?>
+        <tr align="center">
+            <!--这里的id和for里面的c1 需要循环出来-->
+            <td><?php echo $row['id'];?></td>
+            <td><?php echo $row['name'];?></td>
+            <td><a href="../../home/showSurvey.php?survey_id=<?php echo $row['id'];?>" target="_blank" style="text-decoration: none"><?php echo $row['title'];?></a></td>
+            <?php if($row['shelves'] == 0){echo "<td align='center'><input type='button' value='上架' class='btn' onclick='shangjia({$row['id']})'></td>";}else{echo "<td>已上架</td>";}?>
+            <?php echo "<td align='center'><input type='button' value='结果详情' class='btn' onclick='showDetail({$row['id']})'><input type='button' value='删除' class='btn' onclick='delUser({$row['id']})'></td>";?>
+        </tr>
+        <?php endwhile;?>
+        </tbody>
+    </table>
+</div>
+</body>
+<script type="text/javascript">
+    function showDetail(id) {
+        window.location = "../../home/analysis.php?survey_id=" + id;
+    }
+
+    function delUser(id) {
+        if (window.confirm("您确定要删除吗？删除之后不可以恢复哦！！！")) {
+            window.location = "delSurvey.php?id=" + id;
+        }
+    }
+
+    function shangjia(id) {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState == 4) {
+                //alert(xhr.responseText);
+                window.location.reload();
+            }
+        }
+        xhr.open('get','./check.php?id='+id+"&num=3");
+        xhr.send(null);
+    }
+
+</script>
+</html>

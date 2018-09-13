@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>编辑用户</title>
+	<script type="text/javascript">
+        function f1(){
+            //利用js获取get请求传来的参数
+            var str1= location.search;
+            var id = parseInt(str1.substring(1).substring(1).substring(1).substring(1));
+            alert(id);
+            var xhr = new XMLHttpRequest();
+            var name = document.getElementById('username').value;
+            xhr.onreadystatechange=function () {
+                if(xhr.readyState==4 && xhr.status == 200){
+                    if (xhr.responseText != "OK") {
+                        alert(xhr.responseText);
+                    }
+                }
+            }
+            xhr.open('get','./check.php?username='+name+'&id='+id+"&num=1");
+            xhr.send(null);
+        }
+
+	</script>
+</head>
+<body>
+<h3>编辑用户</h3>
+<form action="./editPerson.php?user_id=<?php echo $user_id;?>&role=<?php echo $row['role'];?>" method="post" enctype="multipart/form-data">
+<table width="70%" border="1" cellpadding="5" cellspacing="0" bgcolor="#cccccc">
+	<tr>
+		<td align="right">用户名</td>
+		<td><input type="text" id="username" onblur="f1()" name="username" placeholder=""/></td>
+	</tr>
+	<tr>
+		<td align="right">密码</td>
+		<td><input type="password" name="password"/></td>
+	</tr>
+	<tr>
+		<td align="right">邮箱</td>
+		<td><input type="text" name="email" placeholder=""/></td>
+		
+	</tr>
+	<tr>
+		<td align="right">性别</td>
+		<td><input type="radio" name="sex" value="1"/>男
+		<input type="radio" name="sex" value="2"/>女
+		<input type="radio" name="sex" value="3"/>保密
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="submit"  value="编辑用户"/></td>
+	</tr>
+
+</table>
+</form>
+</body>
+</html>

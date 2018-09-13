@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>管理员列表</title>
+    <meta name="viewport" content="width=device-width;initial-scale=1">
+    <link href="../js/bootstrap.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../styles/backstage.css">
+</head>
+
+<body>
+<div class="details">
+                    <div class="details_operation clearfix">
+                        <div class="bui_select">
+                            <?php if($uid == 1){ ?>
+                            <input type="button" value="添&nbsp;&nbsp;加" class="add btn"  onclick="addAdmin()">
+                            <?php }else{ ?>
+                            <input type="button" value="添&nbsp;&nbsp;加" class="add"  disabled="true">
+                            <?php } ?>
+                        </div>
+                            
+                    </div>
+                    <!--表格-->
+                    <table class="table" cellspacing="0" cellpadding="0">
+                        <thead>
+                            <tr>
+                                <th width="15%">编号</th>
+                                <th width="25%">管理员名称</th>
+                                <th width="30%">管理员邮箱</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <?php if($uid == 1):?>
+                        <?php while($row = mysql_fetch_assoc($res)):?>
+                            <tr align="center">
+                                <!--这里的id和for里面的c1 需要循环出来-->
+                                <td><?php echo $row['id'];?></td>
+                                <td><?php echo $row['name'];?></td>
+                                <td><?php echo $row['email'];?></td>
+                                <?php echo"<td align='center'><input type='button' value='修改' class='btn' onclick='editAdmin({$row['id']})'><input type='button' value='删除' class='btn'  onclick='delAdmin({$row['id']})'></td>"; ?>
+                            </tr>
+                        <?php endwhile;?>
+                        <?php endif;?>
+
+                        <?php if($uid == 0):?>
+                        <?php while($row = mysql_fetch_assoc($res)):?>
+                        <tr align="center">
+                            <!--这里的id和for里面的c1 需要循环出来-->
+                            <td><?php echo $row['id'];?></td>
+                            <td><?php echo $row['name'];?></td>
+                            <td><?php echo $row['email'];?></td>
+                            <?php if($_COOKIE['user_id'] == $row['id']){echo "<td align='center'><input type='button' value='修改' class='btn' onclick='editAdmin({$row['id']})'><input type='button' value='删除' class='btn'  onclick='delAdmin({$row['id']})'></td>";}else{echo "<td><input type='button' value='修改' class='btn'  disabled='true'><input type='button' value='删除' class='btn'  disabled='true'></td>";}?>
+                        </tr>
+                        <?php endwhile;?>
+                        <?php endif;?>
+                        </tbody>
+                    </table>
+                </div>
+</body>
+<script type="text/javascript">
+
+	function addAdmin(){
+		window.location="addAdmin.php";	
+	}
+	function editAdmin(id){
+			window.location="editAdmin.php?id="+id;
+	}
+	function delAdmin(id){
+        var arr= location.search;
+        var lenth = arr.length;
+        var role = arr[lenth-1];
+	    if(window.confirm("您确定要删除id为"+id+"的管理员吗？删除之后不可以恢复哦！！！")){
+				window.location="delPerson.php?id="+id+"&role="+role;
+			}
+	}
+</script>
+</html>
